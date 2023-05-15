@@ -3,13 +3,16 @@ import { GlobalStyle } from './styles/global'
 import { theme } from './styles/themes/default'
 import { Router } from './Routes'
 import { BrowserRouter } from 'react-router-dom'
+import { UserContextProvider } from './hooks/user'
 
 export function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <BrowserRouter>
-        <Router />
+        <UserContextProvider>
+          <Router />
+        </UserContextProvider>
       </BrowserRouter>
     </ThemeProvider>
   )

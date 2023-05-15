@@ -6,13 +6,11 @@ export const Container = styled.nav`
   align-items: center;
   justify-content: space-between;
 
-  background-color: ${(props) => props.theme.background};
+  background-color: ${(props) => props.theme.zinc800};
 
   width: 100%;
   height: 6.5rem;
   max-width: 70rem;
-
-  border-bottom: 1px solid ${(props) => props.theme.primary};
 `
 
 export const LogoImg = styled.img`

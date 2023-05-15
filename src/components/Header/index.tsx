@@ -5,7 +5,7 @@ import {
   Nav,
   NavLinksContainer,
 } from './styles'
-import Logo from '../../assets/logo.png'
+import Logo from '../../assets/banner.png'
 
 export function Header() {
   return (
@@ -14,9 +14,8 @@ export function Header() {
         <LogoImg src={Logo} />
       </ImageNavLik>
       <NavLinksContainer>
-        <Nav to="/">Characters</Nav>
-        <Nav to="/planets">Planets</Nav>
-        <Nav to="/starships">Starships</Nav>
+        <Nav to="/">Home</Nav>
+        <Nav to="/address">Address</Nav>
       </NavLinksContainer>
     </Container>
   )
