@@ -54,6 +54,19 @@ export const Avatar = styled.div`
   }
 `
 
+export const MobileEmployeeName = styled.div`
+  display: none;
+
+  @media (max-width: 768px) {
+    margin: 1rem 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+  }
+`
+
 export const AboutMe = styled.div`
   margin-top: 1rem;
 

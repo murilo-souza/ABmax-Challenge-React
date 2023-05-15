@@ -5,6 +5,7 @@ import {
   Container,
   DevInfo,
   LeftContent,
+  MobileEmployeeName,
   PersonalInfo,
   RightContent,
   UserArea,
@@ -32,6 +33,15 @@ export function Home() {
                 <Avatar>
                   <img src={uniqueUser.picture.large} alt="" />
                 </Avatar>
+
+                <MobileEmployeeName>
+                  <h1>
+                    {uniqueUser.name.title}. {uniqueUser.name.first}{' '}
+                    {uniqueUser.name.last}
+                  </h1>
+                  <h3>ABMAX Employee</h3>
+                </MobileEmployeeName>
+
                 <AboutMe>
                   <h2>
                     About the <span>employee</span>

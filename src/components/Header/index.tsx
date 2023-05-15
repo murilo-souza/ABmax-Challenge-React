@@ -5,7 +5,7 @@ import {
   Nav,
   NavLinksContainer,
 } from './styles'
-import Logo from '../../assets/banner.png'
+import Logo from '../../assets/logo.png'
 
 export function Header() {
   return (
