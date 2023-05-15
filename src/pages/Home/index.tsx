@@ -34,7 +34,7 @@ export function Home() {
                 </Avatar>
                 <AboutMe>
                   <h2>
-                    Who <span>am I?</span>
+                    About the <span>employee</span>
                   </h2>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.

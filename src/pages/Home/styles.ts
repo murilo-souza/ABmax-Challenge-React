@@ -12,8 +12,6 @@ export const BannerArea = styled.div`
   overflow: hidden;
   object-fit: cover;
 
-  background: '#000000';
-
   img {
     width: 100%;
     height: 100%;

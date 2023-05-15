@@ -23,22 +23,34 @@ export const HeaderTitle = styled.h2`
 export const AddressContainer = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: 22.2rem 24.2rem 20.2rem;
+  grid-template-columns: auto auto auto;
   column-gap: 0.75rem;
   row-gap: 1rem;
-  grid-auto-flow: dense;
 
-  .cep {
-    grid-column: span 3;
-    max-width: 22.2rem;
+  .col-1 {
+    grid-column: span 1;
   }
 
-  .street {
-    grid-column: span 3;
-  }
-
-  .country {
+  .col-2 {
     grid-column: span 2;
+  }
+
+  .col-3 {
+    grid-column: span 3;
+  }
+
+  @media (max-width: 768px) {
+    .col-1 {
+      grid-column: span 3;
+    }
+
+    .col-2 {
+      grid-column: span 3;
+    }
+
+    .col-3 {
+      grid-column: span 3;
+    }
   }
 `
 
